@@ -1,0 +1,59 @@
+ bot.on ('guildMemberAdd', member => {
+    const channel =
+   member.guild.channels.find (x => x.name === 'ברוך הבא') ||
+    member.guild.channels.find (x => x.name === 'ברוך הבא') ||
+    member.guild.channels.find (x => x.name === 'WELCOME') ||
+    member.guild.channels.find (x => x.name === '??welcome??') ||
+    member.guild.channels.find (x => x.name === '??Welcome??') ||
+    member.guild.channels.find (x => x.name === '??WELCOME??') ||
+    member.guild.channels.find (x => x.name === 'ברוך הבא') ||
+    member.guild.channels.find (x => x.name === 'ברוכים הבאים') ||
+    member.guild.channels.find (x => x.name === 'WELCOME??') ||
+    member.guild.channels.find (x => x.name === '??Welcome') ||
+    member.guild.channels.find (x => x.name === '??welcome') ||
+    member.guild.channels.find (x => x.name === '??WELCOME') ||
+   member.guild.channels.find (x => x.name === 'bot-hell')
+    אם (! ערוץ) יחזור;
+      תן joinEmbed = new Discord.RichEmbed ()
+      .setTitle ("חבר הצטרף")
+      .setColor ("ירוק")
+      .setThumbnail (member.user.avatarURL)
+      .setDescription (`$ {חבר}, נמצא כעת בשרת ** $ {member.guild.name} **, \ n אנו כעת ** $ {member.guild.memberCount} חברים, ברוך הבא! $ {חבר} * * `)
+      channel.send (joinEmbed);
+     
+    const תפקיד =
+    member.guild.roles.find (x => x.name === "חברים") ||
+    member.guild.roles.find (x => x.name === "חברים") ||
+    member.guild.roles.find (x => x.name === "MEMBER") ||
+    member.guild.roles.find (x => x.name === "חבר") ||
+    member.guild.roles.find (x => x.name === "חבר") ||
+    member.guild.roles.find (x => x.name === "חבר")
+    אם (! תפקיד) יחזור;
+    member.addRole (תפקיד.יד);
+    });
+ 
+bot.on ('guildMemberRemove', member => {
+    const channel =
+   member.guild.channels.find (x => x.name === 'ברוך הבא') ||
+    member.guild.channels.find (x => x.name === 'ברוך הבא') ||
+    member.guild.channels.find (x => x.name === 'WELCOME') ||
+    member.guild.channels.find (x => x.name === '??welcome??') ||
+    member.guild.channels.find (x => x.name === '??Welcome??') ||
+    member.guild.channels.find (x => x.name === '??WELCOME??') ||
+    member.guild.channels.find (x => x.name === 'ברוך הבא') ||
+    member.guild.channels.find (x => x.name === 'ברוכים הבאים') ||
+    member.guild.channels.find (x => x.name === 'WELCOME??') ||
+    member.guild.channels.find (x => x.name === '??Welcome') ||
+    member.guild.channels.find (x => x.name === '??welcome') ||
+    member.guild.channels.find (x => x.name === '??WELCOME')
+    אם (! ערוץ) יחזור;
+      let leaveEmbed = new Discord.RichEmbed ()
+      .setTitle ("חבר שמאלי")
+      .setColor ("אדום")
+      .setThumbnail (member.user.avatarURL)
+      .setDescription (`
+$ {חבר} נותר מהשרת ** $ {member.guild.name} **
+אנחנו עכשיו ** $ {member.guild.memberCount} חברים -_- ** `)
+ 
+      channel.send (leaveEmbed);
+    });
